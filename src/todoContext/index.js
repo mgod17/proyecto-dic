@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocalStorage } from "./useLocalStorage";
+
 const TodoContext = React.createContext();
 
 function TodoProvider(props) {
@@ -33,6 +34,7 @@ function TodoProvider(props) {
     newTodos[todoIndex].completed = true;
     saveTodos(newTodos);
   };
+
   const deleteTodo = (text) => {
     const todoIndex = todos.findIndex((todo) => todo.text === text);
     const newTodos = [...todos];
@@ -58,4 +60,5 @@ function TodoProvider(props) {
     </TodoContext.Provider>
   );
 }
+
 export { TodoContext, TodoProvider };
