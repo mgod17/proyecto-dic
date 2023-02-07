@@ -2,6 +2,7 @@
     width: auto;
     display: flex;
     justify-content: center;
+    
 }
 .createTodoButton {
     background-color: #2d839b;
@@ -20,6 +21,8 @@
     z-index: 1;
     transform: rotate(0);
     transition: .3s ease;
+    bottom:48px;
+    position: fixed;
   }
   
   .createTodoButton:hover {

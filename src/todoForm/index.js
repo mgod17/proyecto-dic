@@ -1,13 +1,15 @@
 import React from "react";
 import { TodoContext } from "../todoContext";
 import "./TodoForm.css";
+
 function TodoForm() {
   const [newTodoValue, setNewTodoValue] = React.useState("");
-  const { addTodo } = React.useContext(TodoContext);
+  const { addTodo, setOpenModal } = React.useContext(TodoContext);
   const onChange = (event) => {
     setNewTodoValue(event.target.value);
   };
-  const onCancel = () => {};
+  const onCancel = () => {
+    setOpenModal(false)  };
   const onSubmit = (event) => {
     event.preventDefault();
     addTodo(newTodoValue);
