@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/proyecto-dic/static/css/main.72375c28.css",
+    "main.js": "/proyecto-dic/static/js/main.7bfe8a74.js",
+    "index.html": "/proyecto-dic/index.html",
+    "main.72375c28.css.map": "/proyecto-dic/static/css/main.72375c28.css.map",
+    "main.7bfe8a74.js.map": "/proyecto-dic/static/js/main.7bfe8a74.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72375c28.css",
+    "static/js/main.7bfe8a74.js"
+  ]
+}
